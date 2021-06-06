@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "140d4e59-22e7-4754-b4f2-98bd3aebc6c1",
+		"name": "Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3001/product/TestChallenge1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/product/TestChallenge1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"product",
+						"TestChallenge1"
+					]
+				},
+				"description": "Get product by ID\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/product/TestChallenge1 Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/product/TestChallenge1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"product",
+						"TestChallenge1"
+					]
+				},
+				"description": "Get product by ID\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"TestChallenge1\",\r\n  \"name\": \"Shoes\",\r\n  \"description\": \"Sneakers\",\r\n  \"imgUrl\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"TestChallenge1\",\r\n  \"name\": \"Shoes_updated\",\r\n  \"description\": \"Sneakers_updated\",\r\n  \"imgUrl\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/product/TestChallenge1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"product",
+						"TestChallenge1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostReview",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productId\": \"TestChallenge1\",\r\n  \"locale\": \"string\",\r\n  \"rating\": 5,\r\n  \"text\": \"best challenge ever\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/reviews/TestChallenge1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"reviews",
+						"TestChallenge1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetReview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/reviews/TestChallenge1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"reviews",
+						"TestChallenge1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
